@@ -1,0 +1,19 @@
+{
+  "name": "sorting-animation",
+  "version": "1.0.0",
+  "description": "Visualize several sorting algorithms with this application.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ariel-sievers/sorting-animation.git"
+  },
+  "author": "Ariel Sievers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ariel-sievers/sorting-animation/issues"
+  },
+  "homepage": "https://github.com/ariel-sievers/sorting-animation#readme"
+}

@@ -16,5 +16,5 @@ Currently the sorting algorithms you may choose from include:
 - Merge Sort
 
 # References
-This project was heavily inspired from this project: https://github.com/Aaron-Bird/ivy. Hence, there are a lot of similarities
+This project was heavily inspired from another user's project: https://github.com/Aaron-Bird/ivy. Hence, there are a lot of similarities
 in design and functionality. Similarly, some features of my application were changed due to implementation and personalization.

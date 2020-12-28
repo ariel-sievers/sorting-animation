@@ -1,0 +1,231 @@
+body {
+    margin: 3rem auto;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F7F9FA;
+}
+
+h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: 400;
+    margin-top: -1rem;
+    margin-bottom: 1em;
+}
+
+#element-box {
+    border-radius: 1em;
+    overflow: hidden;
+    width: 70vw;
+    height: 35vw;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background-color: white;
+    box-shadow:
+        0 0px 1.1px rgba(0, 0, 0, 0.013),
+        0 0px 3px rgba(0, 0, 0, 0.016),
+        0 0px 7.2px rgba(0, 0, 0, 0.02),
+        0 0px 24px rgba(0, 0, 0, 0.04);
+}
+
+.controls {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.controls--grid {
+    display: grid;
+    width: 70vw;
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+    grid-template-rows: auto;
+    justify-content: space-around;
+    column-gap: 10px;
+}
+
+.controls__elements label {
+    display: grid;
+    grid-template-columns: 30% 1fr 4ch;
+    text-align: right;
+    column-gap: 10px;
+}
+
+.controls__sorting {
+    display: flex;
+    flex-direction: column;
+}
+
+.controls__sorting label {
+    display: grid;
+    grid-template-columns: 1fr 12ch;
+    text-align: right;
+    column-gap: 10px;
+    margin: 5px 0;
+}
+
+.controls--grid__item {
+    justify-self: center;
+    align-self: center;
+}
+
+label {
+    white-space: nowrap;
+}
+
+.element {
+    position: absolute;
+    bottom: 0;
+    border-radius: 99em 99em 0 0;
+    transition: all 0.4s ease;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    color: white;
+}
+
+.highlight {
+    background-color: #FFF831 !important;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    background-color: rgb(209, 209, 209);
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 99em;
+    height: 6px;
+    align-self: center;
+    opacity: 0.8;
+}
+
+input[type=range]:hover {
+    opacity: 1;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: rgb(45, 189, 165);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    cursor: grab;
+}
+
+input[type=range]:active::-webkit-slider-thumb {
+    cursor: grabbing;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background-color: transparent; 
+    border-color: transparent;
+    color: transparent;
+    background-color: rgb(209, 209, 209);
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 99em;
+    height: 6px;
+    align-self: center;
+}
+
+select {
+    border-radius: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0.5em;
+    width: 20ch;
+}
+
+option {
+    margin: 5em;
+}
+
+button {
+    outline: 0;
+    border: 0;
+    padding: 0.75em 1em;
+    background-color: rgb(45, 189, 165);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+button:hover {
+    filter: brightness(0.9);
+}
+
+.rule {
+    display: none;
+}
+
+@media (max-width: 1176px) {
+    .controls--grid {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        row-gap: 20px;
+    }
+
+    .controls__buttons {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
+        padding-left: 0;
+        padding-right: 0;
+    }  
+}
+
+@media (max-width: 768px) {
+    #element-box {
+        width: 90vw;
+        height: 70vw;
+    }
+
+    .controls--grid {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, auto);
+        column-gap: 0;
+        grid-auto-flow: column;
+    }
+
+    .controls--grid__item {
+        padding-top: 1.5em;
+    }
+
+    .controls--grid__item + .controls--grid__item {
+        border-top: 1px solid darkgrey;
+    }
+
+    .controls__elements {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        width: 100%;
+        grid-gap: 5px;
+    }
+
+    .controls__sorting {
+        width: 100%;
+    }
+
+    .controls__sorting label {
+        display: block;
+        width: auto;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .controls__buttons {
+        width: 100%;
+    }
+
+}

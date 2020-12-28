@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Sorting Animation</title>
+        <meta name="description" content="Visualize several sorting algorithms with this application.">
+        <meta name="author" content="Ariel Sievers">
+
+        <link rel="stylesheet" href="css/styles.css">
+
+        <script src="https://kit.fontawesome.com/281503fce6.js" crossorigin="anonymous"></script>
+        <script src="scripts/animate.js"></script>
+        <script src="scripts/algorithms.js"></script>
+        <script src="scripts/init.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Let's do some sorting!</h1>
+        </header>
+        <div id="element-box"></div>
+        <div class="controls controls--grid">
+            <div class="controls__elements controls--grid__item">
+                <label for="elements">
+                    Elements
+                    <input type="range" id="elements" min="1" max="100" value="10" step="1">
+                    <span class="value__elements"></span>
+                </label>
+                <label for="speed">
+                    Speed
+                    <input type="range" id="speed" min="1" max="100" value="30" step="1">
+                    <span class="value__speed"></span>
+                </label>
+            </div>
+            <div class="controls__sorting controls--grid__item">
+                <label for="sorting__type">
+                    Algorithm
+                    <select id="sorting__type">
+                        <option value="quick">Quick Sort</option>
+                        <option value="heap">Heap Sort</option>
+                        <option value="bubble">Bubble Sort</option>
+                        <option value="insertion">Insertion Sort</option>
+                        <option value="selection">Selection Sort</option>
+                        <option value="merge">Merge Sort</option>
+                    </select>
+                </label>
+                <label for="sorting__order">
+                    Order
+                    <select id="sorting__order">
+                        <option value="ascending">ascending</option>
+                        <option value="descending">descending</option>
+                    </select>
+                </label>
+            </div>
+            <div class="controls__buttons controls--grid__item">
+                <button type="button" class="btn btn__pause" disabled>Pause <i class="fas fa-pause"></i></button>
+                <button type="button" class="btn btn__sort">Sort <i class="fas fa-play"></i></button>
+                <button type="button" class="btn btn__shuffle">Shuffle <i class="fas fa-random"></i></button>
+            </div>
+        </div>
+    </body>
+</html>

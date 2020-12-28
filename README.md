@@ -18,3 +18,5 @@ Currently the sorting algorithms you may choose from include:
 # References
 This project was heavily inspired from another user's project: https://github.com/Aaron-Bird/ivy. Hence, there are a lot of similarities
 in design and functionality. Similarly, some features of my application were changed due to implementation and personalization.
+
+Some sorting aglorithms found on [GeeksforGeeks](https://www.geeksforgeeks.org/) were used as a reference as well.

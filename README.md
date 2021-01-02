@@ -9,6 +9,10 @@ First, download the project files. Then go to the root of the project within a c
 The application should run on port 3000 (http://localhost:3000) with the ability to change the number of elements, sorting speed, sorting order, and sorting type.
 You may also pause/start the algorithm with buttons on the lower right, as well as shuffle the elements in a different order.
 
+# Demo
+
+If you don't want to download the project, you can play with it here: https://sortinganimation.netlify.app/.
+
 ## Example Screenshots
 
 ### Before
